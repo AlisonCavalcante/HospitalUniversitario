@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="HospitalUniversitarioPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <class>br.com.model.daos.EnderecoDAO</class>
+    <class>br.com.beans.Endereco</class>
+    <class>br.com.beans.Cidade</class>
+    <class>br.com.beans.Estado</class>
+    <class>br.com.beans.Administrador</class>
+    <class>br.com.beans.ProfissionalDeSaude</class>
+    <class>br.com.beans.Pessoa</class>
+    <class>br.com.beans.Paciente</class>
+    <class>br.com.beans.Atendente</class>
+    <class>br.com.beans.Prontuario</class>
+    <class>br.com.beans.Especializacao</class>
+    <class>br.com.model.daos.AtendenteDAO</class>
+    <class>br.com.beans.Estoque</class>
+    <class>br.com.beans.Insumo</class>
+    <class>br.com.beans.Usuario</class>
+    <class>br.com.beans.Dependente</class>
+    <class>br.com.beans.ViewReset</class>
+    <class>br.com.beans.ViewReset_1</class>
+    <class>br.com.beans.ViewProfdesaude</class>
+    <class>br.com.beans.SalarioProfsaude</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/postgres"/>
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="12345"/>
+      <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="javax.persistence.schema-generation.database.action" value="update"/>
+    </properties>
+  </persistence-unit>
+</persistence>

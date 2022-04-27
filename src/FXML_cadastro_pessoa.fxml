@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.controller.FXML_cadastro_pessoa_controller">
+    <children>
+      <Button fx:id="button_proximo" layoutX="281.0" layoutY="442.0" mnemonicParsing="false" text="Proximo" />
+      <Button fx:id="button_cancelar" layoutX="358.0" layoutY="442.0" mnemonicParsing="false" text="Cancelar" />
+      <Label fx:id="label_nome" layoutX="197.0" layoutY="22.0" text="Nome:" />
+      <Label fx:id="label_idade" layoutX="201.0" layoutY="51.0" text="Idade:" />
+      <Label fx:id="label_cpf" layoutX="210.0" layoutY="80.0" text="CPF:" />
+      <Label fx:id="label_sexo" layoutX="205.0" layoutY="107.0" text="Sexo:" />
+      <Label fx:id="label_email" layoutX="198.0" layoutY="136.0" text="E-mail:" />
+      <Label fx:id="label_data_nascimento" layoutX="343.0" layoutY="51.0" text="Data de nascimento:" />
+      <Label fx:id="label_estado" layoutX="194.0" layoutY="205.0" text="Estado:" />
+      <Label fx:id="label_cidade" layoutX="193.0" layoutY="234.0" text="Cidade:" />
+      <Label fx:id="label_largadouro" layoutX="168.0" layoutY="263.0" text="Logradouro:" />
+      <Label fx:id="label_bairro" layoutX="195.0" layoutY="349.0" text="Bairro: " />
+      <Label fx:id="label_numero" layoutX="183.0" layoutY="292.0" text="Numero: " />
+      <Label fx:id="label_cep" layoutX="210.0" layoutY="321.0" text="CEP:" />
+      <TextField fx:id="field_nome" layoutX="243.0" layoutY="19.0" prefHeight="25.0" prefWidth="271.0" />
+      <TextField fx:id="field_idade" layoutX="243.0" layoutY="47.0" prefHeight="25.0" prefWidth="62.0">
+         <effect>
+            <Blend />
+         </effect>
+      </TextField>
+      <TextField fx:id="field_cpf" layoutX="243.0" layoutY="75.0" />
+      <ComboBox fx:id="combo_sexo" layoutX="243.0" layoutY="103.0" prefHeight="25.0" prefWidth="123.0" />
+      <TextField fx:id="field_data_nascimento" layoutX="463.0" layoutY="47.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="estado" layoutX="243.0" layoutY="201.0" />
+      <TextField fx:id="field_email" layoutX="243.0" layoutY="132.0" />
+      <TextField fx:id="field_cidade" layoutX="243.0" layoutY="230.0" />
+      <TextField fx:id="field_largadouro" layoutX="243.0" layoutY="259.0" />
+      <TextField fx:id="field_numero" layoutX="243.0" layoutY="287.0" />
+      <TextField fx:id="field_cep" layoutX="243.0" layoutY="316.0" />
+      <TextField fx:id="field_bairro" layoutX="243.0" layoutY="345.0" />
+    </children>
+</AnchorPane>

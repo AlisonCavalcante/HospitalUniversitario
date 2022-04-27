@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLVboxTelaPrincipal">
+   <children>
+      <MenuBar prefHeight="19.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Cadastros">
+               <items>
+                  <MenuItem fx:id="menuItemCadastrarPacientes" mnemonicParsing="false" onAction="#menuItem" text="Pacientes" />
+                  <MenuItem fx:id="menuItemCadastrarProfissional" mnemonicParsing="false" onAction="#menuItem" text="Profissional de saúde" />
+                  <MenuItem fx:id="menuItemAtendente" mnemonicParsing="false" onAction="#menuItem" text="Atendente" />
+                  <MenuItem fx:id="menuITemAdmin" mnemonicParsing="false" onAction="#menuItem" text="Administrador" />
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Prontuario">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Gerar Prontuario" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Relatórios">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="pane" prefHeight="459.0" prefWidth="600.0" />
+   </children>
+</VBox>
